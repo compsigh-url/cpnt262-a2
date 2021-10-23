@@ -1,5 +1,7 @@
 'use strict';
 
+
+// Array of objects containing each image and it's data.
 const images = [{
     "title": "photo1",
     "decription": "Sky with clouds",
@@ -122,9 +124,12 @@ const images = [{
   }
 ];
 
+//Declaring the 'htmlOutput' variable as an empty string, to later be used to output html onto my page.
 let htmlOutput = '';
 
+//Defining the 'output' function.
 const output = function (item, index, array) {
+  //Appending new html as a string based on my image objects to the to the 'htmlOutput' variable.
   htmlOutput += `<figure class="gallery-element">
   <div class="gallery-img">
     <img title="${images[index].title}" src="${images[index].pathURL}" alt="${images[index].decription}" width="${images[index].width}" height="${images[index].height}">
@@ -135,7 +140,8 @@ const output = function (item, index, array) {
 </figure>`;
 }
 
+//Calling the 'output' function for each item in the 'images' array.
 images.forEach(output);
 
-const galleryHTTML = document.querySelector(".gallery-container");
-galleryHTTML.innerHTML = htmlOutput;
+//Outputting the string within in 'htmlOuput' as html using .innerHTML to to any element with the 'gallery-container' class.
+document.querySelector(".gallery-container").innerHTML = htmlOutput;
