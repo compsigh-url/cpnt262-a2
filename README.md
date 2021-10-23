@@ -1,11 +1,12 @@
-#CPNT-262 Assignment Two
+# CPNT-262 Assignment Two
 
-## Author : Robin (Abishek Roka) Pradhan
+## Author : 
+Robin (Abishek Roka) Pradhan
 
 ## Links :
 
---
---
+https://github.com/compsigh-url/cpnt262-a2/
+https://compsigh-url.github.io/cpnt262-a2/
 
 ## Hints :
 
